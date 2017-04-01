@@ -3,8 +3,8 @@
 #AWS Route53 mappings 
 param (
 	[Parameter(Mandatory=$true)][String]$subdomainName,
-	[string]$domainName = 'picturesofus.blah'
-	#[string]$domainName = 'picturesofus.net'
+	#[string]$domainName = 'picturesofus.blah'
+	[string]$domainName = 'picturesofus.net'
 )
 
 $bucketName = "$subdomainName.$domainName"
